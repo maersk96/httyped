@@ -1,0 +1,19 @@
+{
+  "name": "@maersk96/httyped",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc",
+    "example": "npx tsx src/example.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "typescript": "^5.3.3"
+  }
+}
