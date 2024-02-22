@@ -59,11 +59,17 @@ Consuming the `client` is a charm. IntelliSense will help you out.
 
 ```typescript
 // Path, params and response are now strongly typed. Mistakes not welcome!
-const user = await client.get('api/users/{userId}', {
+const user = await client.get('/api/users/{userId}', {
   params: {
     userId: String(123)
   }
 })
+```
+
+#### Custom Methods
+Methods not supported by default can be supported using the more general `request` function.
+```typescript
+const user = await client.request('CUSTOM_METHOD','/api/my/path', {})
 ```
 
 ## Examples
