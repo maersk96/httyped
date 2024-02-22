@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Azure Function extension for httyped.",
-  "types": "dist/index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "check": "tsc --noEmit",
     "test": "npm run check"
