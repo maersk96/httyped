@@ -1,5 +1,8 @@
 {
   "name": "@maersk96/httyped",
+  "workspaces": [
+    "packages/azure-functions"
+  ],
   "type": "module",
   "version": "1.0.0",
   "description": "",

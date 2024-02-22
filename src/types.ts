@@ -1,8 +1,14 @@
 export const GET = 'GET'
+export const PUT = 'PUT'
 export const POST = 'POST'
+export const PATCH = 'PATCH'
+export const DELETE = 'DELETE'
 
 export type GET = typeof GET
+export type PUT = typeof PUT
 export type POST = typeof POST
+export type PATCH = typeof PATCH
+export type DELETE = typeof DELETE
 
 export type Path = `/${string}`
 export type Method = Uppercase<string>
@@ -16,7 +22,7 @@ export type Parameters<T extends string> =
 				Parameters<Rest>
 		: {}
 
-export type Endpoint = {
+export interface Endpoint {
 	path: `/${string}`
 	method: Uppercase<string>
 	query?: object

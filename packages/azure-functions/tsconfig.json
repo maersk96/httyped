@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "target": "ES2020",
+        "module": "ESNext",
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "skipLibCheck": false,
+        /* Bundling */
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "outDir": "dist",
+        "declaration": true,
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "include": [
+        "index.d.ts",
+        "util.d.ts",
+        "test.ts",
+        "temporary.d.ts"
+    ]
+}
